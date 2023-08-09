@@ -1,1 +1,243 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Psicoanalista Ivonne Granados</title>
+    <link rel="shortcut icon" href="./imagenes/icono.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+  </head>
 
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="index.html">
+                  <img src="./imagenes/logo2.png" alt="logo" width="50" height="30" class="d-inline-block align-text-top">
+                </a>
+                <p>
+                  Mtra. Ivonne Granados | Psicoanalista
+                </p>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#semblanza">Semblanza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 form-sm" type="search" placeholder="Búsqueda">
+                  <button class="btn btn-outline-light btn-sm" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <div class="container-md consulta">
+        <h4>Clara Ivonne Granados García</h4>
+        <h5>Terapia Psicoanalítica en Ciudad de México</h5>
+        <div class="row justify-content-md-center">
+          <div class="col-sm-3">
+            <a href="#contacto"><p class="contactame">Contáctame</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="7000">
+            <img src="./imagenes/c1.jpg" class="d-block w-100" alt="¿En qué te puedo ayudar?">
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./imagenes/c2.jpg" class="d-block w-100" alt="Iniciemos tu proceso">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="semblanza">
+        <div class="container-sm">
+          <div class="row justify-content-md-center">
+            <div class="col-md-5">
+              <img class="sobremi mx-auto" src="./imagenes/quiensoy.jpg" alt="sobremi">
+            </div>
+            <div class="col-md-7 mx-auto acercade">
+              <h5>Acerca de mi</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit alias pariatur tenetur ab at corrupti reiciendis assumenda, earum vel enim possimus numquam voluptatem debitis delectus tempora aliquid quasi voluptatum eaque.</p>
+              <div id="contenidoOcultar" hidden class="informacion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, porro. Quo animi, culpa adipisci dolorum illo vero debitis, voluptatibus at nemo, ea qui quis. Ea similique ex explicabo et assumenda.</p>
+              </div>
+              <button class="leer" onclick="ocultarMostrar()">Leer más...</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-sm mt-3 mx-auto mt-4">
+          <h5>Estudios</h5>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Eos voluptas ullam placeat aperiam officia architecto, reprehenderit quibusdam debitis vel id error eius earum,</li>
+            <li>Unde, magni ratione totam facilis ipsam recusandae.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="servicios">
+        <div class="container-sm mx-auto mt-0">
+        <h5>Modalidad de consulta</h5>
+          <ul>
+            <li>Atención en línea por videollamada</li>
+            <li>Presencial</li>
+            <li>Terapia individual (adultos)</li>
+            <li>Terapia en pareja</li>
+            <li>Terapia en grupo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-sm my-4">
+        <div class="row justify-content-md-center px-5">
+          <div class="col-md-3">
+            <a href="#contacto"><p class="contactame">Contáctame</p></a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://forms.gle/sxsXCKmZz5napgoi8" target="_blank" rel="noopener noreferrer" class="contactame">Agenda tu cita</a>
+          </div>
+          <div class="col-md-3">
+            <a href="#ubicacion" class="contactame">Ubicación</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="blog">
+        <h6>Blog y reseñas</h6>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 textoblog">
+              <a href="https://www.facebook.com/story.php?story_fbid=pfbid02LjHSYGJMTGM6ptNPRg83NocsqSacxdYQbLhBoWctLuu7ZZtT9rX8BKWeoXCrbPiUl&id=1504722123166961&sfnsn=scwspmo&mibextid=6aamW6" target="_blank" rel="noopener noreferrer">
+                <img class="imagenblog" src="./imagenes/historia.jpg" alt="Criminalística">
+              </a>
+              <a class="mb-4" href="https://www.facebook.com/story.php?story_fbid=pfbid02LjHSYGJMTGM6ptNPRg83NocsqSacxdYQbLhBoWctLuu7ZZtT9rX8BKWeoXCrbPiUl&id=1504722123166961&sfnsn=scwspmo&mibextid=6aamW6" target="_blank" rel="noopener noreferrer">Historia de la Criminalística
+              </a>
+            </div>
+            <div class="col-lg-4 textoblog">
+              <a href="https://www.facebook.com/story.php?story_fbid=pfbid023Z4zbXcCsQEdCFbdsFUaMvE1dU9U742zrN8nwsQ9zVZEu7ZoWKP9PmVmvy7UC3VBl&id=1504722123166961&sfnsn=scwspmo&mibextid=6aamW6">
+                <img class="imagenblog" src="./imagenes/penal.jpg" alt="Proceso penal">
+              </a>
+              <a class="mb-4" href="https://www.facebook.com/story.php?story_fbid=pfbid023Z4zbXcCsQEdCFbdsFUaMvE1dU9U742zrN8nwsQ9zVZEu7ZoWKP9PmVmvy7UC3VBl&id=1504722123166961&sfnsn=scwspmo&mibextid=6aamW6" target="_blank" rel="noopener noreferrer">Importancia de la Psiquiatría Forense en el Proceso Penal
+              </a>
+            </div>
+            <div class="col-lg-4 textoblog">
+              <a href="https://m.facebook.com/story.php?story_fbid=pfbid02AqbwER38tWTviwrvA4rhtguJY55Dz4WUwhH4muk6esJ6RM9Qee3DmyGQH6X6CW5Jl&id=1504722123166961&sfnsn=scwspmo&mibextid=6aamW6" target="_blank" rel="noopener noreferrer">
+                <img class="imagenblog" src="./imagenes/opresion.jpg" alt="Análisis">
+              </a>
+              <a class="mb-4" href="https://m.facebook.com/story.php?story_fbid=pfbid02AqbwER38tWTviwrvA4rhtguJY55Dz4WUwhH4muk6esJ6RM9Qee3DmyGQH6X6CW5Jl&id=1504722123166961&sfnsn=scwspmo&mibextid=6aamW6" target="_blank" rel="noopener noreferrer">Breve Análisis del Feminicidio
+              </a>
+            </div>
+          </div>
+          <h6>Más información sobre terapia psicoanalítica</h6>
+          <div class="row justify-content-md-center pb-3">
+            <div class="ratio ratio-16x9 mt-4 mx-auto video">
+              <iframe src="https://www.youtube.com/embed/PU1resHvazU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
+          </div>
+        </div> 
+      </div>
+
+      <div id="contacto">
+        <h5>Contacto</h5>
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="tdif">¿Tienes alguna duda?</h6>
+              <ul class="letra">
+                <li>Email: naluracusbo@gmail.com</li>
+                <li>Celular: (+52) 55 2558 4098</li>
+              </ul>
+              <h6 class="tdif">Horario de atención</h6>
+              <ul class="letra">
+                <li>Lunes a viernes 9:00 a.m. - 6:00 p.m.</li>
+                <li>Sábados 9:00 a.m. - 1:00 p.m.</li>
+              </ul>
+              <div class="row justify-content-md-center px-5">
+                <div class="col-lg-4">
+                  <a href="tel:+525525584098" class="contactame">Llama ahora</a>
+                </div>
+                <div class="col-lg-4">
+                  <a href="mailto:naluracusbo@gmail.com?Subject=Informes%20Terapia%20Psicoanalitica" class="contactame">Manda un correo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h6 class="ms-0 tdif">Envíame un mensaje</h6>
+              <div class="mb-3 letra">
+                <label for="FormControlInput" class="form-label">Email
+                </label>
+                <input type="email" class="form-control form-sm" id="FormControlInput" placeholder="tucorreo@ejemplo.com">
+              </div>
+              <div class="mb-3 letra">
+                <label for="FormControlText" class="form-label">Nombre
+                </label>
+                <input type="text" class="form-control form-sm" id="FormControlText" placeholder="Escribe tu nombre completo aquí.">
+              </div>
+              <div class="mb-3 letra">
+                <label for="FormControlTextarea" class="form-label form-sm">Mensaje</label>
+                <textarea class="form-control" id="FormControlTextarea" rows="3" placeholder="Escribe tu mensaje aquí."></textarea>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-sm mt-3 mb-3 envio">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 id="ubicacion">Ubicación</h5>
+        <div class="row justify-content-md-center">
+          <div class="ratio ratio-16x9 mt-4 mx-auto video">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.4330451113836!2d-99.10784945666025!3d19.414637084723033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fea3cf328239%3A0x10324986b22ffac5!2sTIENDA%20DE%20ABARROTES!5e0!3m2!1ses-419!2smx!4v1691574281595!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> 
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#"><img src="./imagenes/in.png" alt="linkedin"></a>
+            <a href="#"><img src="./imagenes/fb.png" alt="facebook"></a>
+            <a href="#"><img src="./imagenes/ig.png" alt="instagram"></a>
+            <a href="#"><img src="./imagenes/wa.png" alt="whatsapp"></a>
+          </div>
+          <div class="col my-auto">
+            <p>Sígueme en mis redes sociales - Copyright © 2023 - <a href="./politica.html" target="_blank" rel="noopener noreferrer">Política de privacidad</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
