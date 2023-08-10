@@ -41,8 +41,7 @@ h5{
 h6{
     background-color: #006c82;
     color: #ffffe6;
-    padding: 5px; 
-    margin: 10px;
+    padding: 5px;
 }
 .contactame{
     background-color: #7821a4;
@@ -96,7 +95,8 @@ h6{
     padding-top: 50px;
 }
 #blog{
-    padding: 42px 30px 30px 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     background-color: #006c8254;
 }
 .textoblog{
@@ -119,12 +119,12 @@ h6{
 #blog a:hover{
     color: #212529;
 }
-.video{
-    width: 70%;
-    
+.margen{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #contacto{
-    padding: 56px;
+    padding-top: 56px;
 }
 .letra{
     font-family: 'Poppins', sans-serif;
@@ -153,6 +153,7 @@ footer{
     align-content: center;
     color: #ffffe6;
     font-size: 14px;
+    margin-top: 50px;
 }
 footer img{
     width: 60px;
