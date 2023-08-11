@@ -33,7 +33,6 @@ h4{
     margin: 20px;
 }
 h5{
-    margin: 0px 20px 20px 20px;
     color: #006c82;
     padding: 5px;
     
@@ -55,23 +54,46 @@ h6{
     font-size: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
+    border: 1px solid #7821a4;
 }
 .contactame:hover{
     color: #7821a4;
-    font-weight: bold;
     background-color: #ffffff00;
-    transform: scale(1.1);
+    border: 1px solid #7821a4;
 }
 #semblanza{
     padding-top: 56px;
 }
 .sobremi{
     border-radius: 50%;
-    width: 70%;
+    width: 75%;
     margin: 10px;
     display: flex;
     align-content: center;
     justify-content: center;
+}
+.sobremi:hover{
+	-webkit-animation: flash 1s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.borde{
+    border-top: 30px solid #006c8254;
 }
 .acercade{
     display: flex;
@@ -80,6 +102,9 @@ h6{
     align-content: center;
     justify-content: center;
     text-align: justify;
+}
+.sinpad{
+    padding: 0px;
 }
 .leer{
     color: #006c82;
@@ -93,6 +118,10 @@ h6{
 }
 #servicios{
     padding-top: 50px;
+}
+#servicios ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #blog{
     padding-top: 50px;
@@ -112,9 +141,29 @@ h6{
     width: 85%;
     margin: 20px;
     border-radius: 8%;
+    width: 80%;
 }
 .imagenblog:hover{
-    transform: scale(1.1);
+    transform: scale(.95);
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 #blog a:hover{
     color: #212529;
@@ -172,4 +221,8 @@ a{
 ::placeholder{
     font-size: 15px;
     font-style: italic;
+}
+.transparente{
+    background-color: #ffffff00;
+    border: 0px;
 }
