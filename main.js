@@ -1,11 +1,14 @@
-function ocultarMostrar() {
-    console.log("Acción Ocultar mostrar");
-  
-    var contenido = document.getElementById("contenidoOcultar");
-    console.log("Contenido valor tiene " + contenido.hidden);
-    if (contenido.hidden) {
-      contenido.hidden = false;
-    } else {
-      contenido.hidden = true;
-    }
+let btnMostrarOcultar = document.getElementById('btnMostrarOcultar');
+let leerContenido = document.getElementById('leerContenido');
+
+btnMostrarOcultar.addEventListener('click', function () {
+  console.log("click");
+
+  if (leerContenido.hidden) {
+    leerContenido.hidden = false;
+    btnMostrarOcultar.innerText = "Leer menos..."
+  } else {
+    leerContenido.hidden = true;
+    btnMostrarOcultar.innerText = "Leer más..."
   }
+});
