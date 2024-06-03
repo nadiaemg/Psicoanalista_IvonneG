@@ -78,9 +78,7 @@ Array.from(forms).forEach(form => {
 let enviarWhatsapp = () => window.location.href = mensajeWhatsapp;
 let llamar = () => window.open(celularDestinatario);
 
-window.addEventListener('load', () => {year.innerText = new Date().getFullYear();
-  
-});
+window.addEventListener('load', () => {year.innerText = new Date().getFullYear();});
 btnContacto.addEventListener("click", () => {window.location.href = './index.html#contacto'});
 btnSemblanza.addEventListener("click", () => {window.location.href = './index.html#semblanza'});
 
