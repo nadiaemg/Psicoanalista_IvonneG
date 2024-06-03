@@ -17,7 +17,7 @@
     --h1-size: 6.4rem;
 
     --body-sm: 1.7rem;
-    --h6-size-sm: 1rem;
+    --h6-size-sm: 1.2rem;
     --h5-size-sm: 1.5rem;
     --h4-size-sm: 1.9rem;
     --h3-size-sm: 2.1rem;
@@ -148,7 +148,7 @@ a:hover {
     border: 0.2rem solid var(--color-principal);
     color: var(--color-terciario);
     font-size: var(--body);
-    width: 14rem;
+    width: 15rem;
     height: 5rem;
 }
 
@@ -210,6 +210,11 @@ a:hover {
     margin: 1rem;
 }
 
+.navbar a:hover,
+.offcanvas-title:hover {
+    color: var(--color-parrafo);
+}
+
 .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -225,7 +230,7 @@ a:hover {
     width: 40vh;
 }
 
-/*Encabezado*/
+/*Presentación*/
 
 .hero-title {
     background-image: url(./imagenes/fondo.jpg);
@@ -233,6 +238,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    height: 100dvh;
     padding-top: 12rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -325,7 +331,10 @@ a:hover {
     align-items: center;
     align-content: center;
     justify-content: center;
-    text-align: justify;
+}
+
+.acerca-de h3 {
+    text-align: center;
 }
 
 .modal-transparencia {
@@ -439,7 +448,6 @@ a:hover {
 .ubicacion iframe {
     width: 100%;
     height: 40rem;
-    border: solid 1px var(--color-principal);
 }
 
 /*Footer*/
@@ -457,7 +465,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--color-secundario);
+    color: var(--color-parrafo);
 }
 
 footer h2,
@@ -494,10 +502,20 @@ footer .contacto-botones {
 
 /*Extra extra large*/
 @media (min-width: 1920px) {
-    .container-fluid,
+    .navbar,
+    .semblanza,
+    .proyectos,
+    .resumen,
+    .servicios,
+    .contacto,
+    .ubicacion,
     header {
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    header {
+        background-color: var(--color-transparencia);
     }
 }
 
@@ -559,13 +577,22 @@ footer .contacto-botones {
     }
 
     .boton-envio {
-        width: 10rem;
+        width: 13rem;
         height: 4rem;
     }
 
     /*Barra de navegación*/
     .navbar {
         min-height: 8rem;
+    }
+
+    .hero-title {
+        padding-top: 10rem;
+    }
+
+    /*Footer*/
+    footer p {
+        font-size: var(--h6-size-sm);
     }
 
 }
@@ -592,12 +619,9 @@ footer .contacto-botones {
     }
 
     /*Presentación*/
-    .hero-title {
-        grid-template-columns: 1fr;
-    }
-
     .hero-title>* {
         margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .hero-title .boton-morado {
@@ -644,6 +668,15 @@ footer .contacto-botones {
         flex-wrap: wrap;
     }
 
+}
+
+/*Small*/
+@media (max-width: 576px) {
+    .hero-title {
+        background-image: url(./imagenes/fondo_chico.jpg);
+        grid-template-rows: 1fr 1fr 3fr;
+        grid-template-columns: 1fr;
+    }
 }
 
 /*Extra small*/
