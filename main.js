@@ -2,8 +2,6 @@ const year = document.getElementById('year');
 const semblanza = document.getElementById('semblanzaTitulo');
 const leerContenido = document.getElementById('leerContenido');
 const btnMostrarOcultar = document.getElementById('btnMostrarOcultar');
-const btnContacto = document.getElementById('btnContacto');
-const btnSemblanza = document.getElementById('btnSemblanza');
 const forms = document.querySelectorAll('.needs-validation');
 const nombre = document.getElementById('nombre');
 const correo = document.getElementById('correo');
@@ -13,7 +11,7 @@ const politicas = document.getElementById('politicas');
 const secureToken = "b68fdc73-bb4f-4596-9cee-3567be94d4b4";
 const correoDestinatario = "naluracusbo@gmail.com"
 const celularDestinatario  = "tel:+525525584098"
-const mensajeWhatsapp = "https://api.whatsapp.com/send?phone=5215525584098&text=Hola%20Ivonne%2C%20%C2%BFme%20podr%C3%ADas%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20para%20agendar%20una%20sesi%C3%B3n%20de%20psicoterapia%3F"
+const mensajeWhatsapp = "https://wa.link/w1biih"
 
 /*Enviar correo de contacto*/
 function enviarMensaje(){
@@ -75,12 +73,26 @@ Array.from(forms).forEach(form => {
   }, false);
 });
 
-let enviarWhatsapp = () => window.location.href = mensajeWhatsapp;
-let llamar = () => window.open(celularDestinatario);
+let enviarWhatsapp = () => {
+  const newWindowWhatsapp = window.open(mensajeWhatsapp, '_blank');
+    if (newWindowWhatsapp) {
+      newWindowWhatsapp.opener = null;
+      newWindowWhatsapp.rel = "noopener noreferrer";
+    }
+};
+
+let llamar = () => {
+  const newWindowCel = window.open(celularDestinatario, '_blank');
+    if (newWindowCel) {
+      newWindowCel.opener = null;
+      newWindowCel.rel = "noopener noreferrer";
+    }
+};
+let irSeccionContacto = () => window.location.href = 'index.html#contacto';
+let irSeccionSemblanza = () => window.location.href = 'index.html#semblanza';
+
 
 window.addEventListener('load', () => {year.innerText = new Date().getFullYear();});
-btnContacto.addEventListener("click", () => {window.location.href = './index.html#contacto'});
-btnSemblanza.addEventListener("click", () => {window.location.href = './index.html#semblanza'});
 
 /*Botón "Leer más/menos*/
 btnMostrarOcultar.addEventListener('click', function () {
