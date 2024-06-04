@@ -148,7 +148,7 @@ a:hover {
     border: 0.2rem solid var(--color-principal);
     color: var(--color-terciario);
     font-size: var(--body);
-    width: 15rem;
+    width: 16rem;
     height: 5rem;
 }
 
@@ -238,7 +238,6 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    height: 100dvh;
     padding-top: 12rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -252,6 +251,7 @@ a:hover {
 .hero-title h1 {
     font-size: var(--h3-size);
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .hero-title h3 {
@@ -469,8 +469,14 @@ footer a:hover {
 }
 
 footer h2,
-footer h5 {
+footer h3 {
     text-align: center;
+}
+
+footer h3 {
+    color: var(--color-terciario);
+    font-weight: normal;
+    font-size: var(--h5-size-sm);
 }
 
 footer p {
@@ -586,6 +592,7 @@ footer .contacto-botones {
         min-height: 8rem;
     }
 
+    /*Presentación*/
     .hero-title {
         padding-top: 10rem;
     }
