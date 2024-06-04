@@ -1,0 +1,10 @@
+User-agent: * 
+Disallow: /imagenes/fondo_chico.jpg
+Disallow: /imagenes/fondo.jpg
+Disallow: /imagenes/modalidad1.jpg
+Disallow: /imagenes/modalidad2.jpg
+Disallow: /imagenes/modalidad3.jpg
+Disallow: /imagenes/logo.jpg
+Allow: /
+
+Sitemap: https://www.ivonnegranados.com/sitemap.html
